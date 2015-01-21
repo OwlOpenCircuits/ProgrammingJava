@@ -48,7 +48,7 @@ public class Robot extends IterativeRobot {
      * This function is called periodically during test mode
      */
     public void testPeriodic() {
-    
+    	System.out.println("Do you even code?");
     }
     
 }
