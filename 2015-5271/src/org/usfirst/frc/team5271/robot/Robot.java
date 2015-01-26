@@ -1,16 +1,6 @@
 package org.usfirst.frc.team5271.robot;
 
-import edu.wpi.first.wpilibj.CameraServer;
-import edu.wpi.first.wpilibj.DigitalInput;
-import edu.wpi.first.wpilibj.Gyro;
-import edu.wpi.first.wpilibj.IterativeRobot;
-import edu.wpi.first.wpilibj.Jaguar;
-import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.RobotDrive;
-import edu.wpi.first.wpilibj.Talon;
-import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.*;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -26,8 +16,6 @@ public class Robot extends IterativeRobot {
 	DigitalInput limitSwitch;
 	Jaguar testMotor;
 	CameraServer server;
-	Gyro direc;
-	
 	
 	
 	
@@ -52,6 +40,7 @@ public class Robot extends IterativeRobot {
         direc = new Gyro(1);
         direc.reset();
         direc.startLiveWindowMode();
+    	Encoder encoder = new Encoder;
     	
     			
     }
